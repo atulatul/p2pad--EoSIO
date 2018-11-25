@@ -1,0 +1,232 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Sun Nov 25 21:32:01 2018",
+    "version": "eosio::abi/1.0",
+    "structs": [
+        {
+            "name": "addad",
+            "base": "",
+            "fields": [
+                {
+                    "name": "s",
+                    "type": "name"
+                },
+                {
+                    "name": "adName",
+                    "type": "string"
+                },
+                {
+                    "name": "adURL",
+                    "type": "string"
+                },
+                {
+                    "name": "type",
+                    "type": "uint64"
+                },
+                {
+                    "name": "totalTok",
+                    "type": "uint32"
+                },
+                {
+                    "name": "tokenPerUser",
+                    "type": "uint32"
+                },
+                {
+                    "name": "status",
+                    "type": "uint8"
+                },
+                {
+                    "name": "lat",
+                    "type": "string"
+                },
+                {
+                    "name": "longi",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "adreset",
+            "base": "",
+            "fields": [
+                {
+                    "name": "pollName",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "adstatus",
+            "base": "",
+            "fields": [
+                {
+                    "name": "adName",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "advert",
+            "base": "",
+            "fields": [
+                {
+                    "name": "key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "adId",
+                    "type": "uint64"
+                },
+                {
+                    "name": "adName",
+                    "type": "string"
+                },
+                {
+                    "name": "adURI",
+                    "type": "string"
+                },
+                {
+                    "name": "adCategory",
+                    "type": "uint64"
+                },
+                {
+                    "name": "adStatus",
+                    "type": "uint8"
+                },
+                {
+                    "name": "totolToken",
+                    "type": "uint32"
+                },
+                {
+                    "name": "tokenPerWatch",
+                    "type": "uint32"
+                },
+                {
+                    "name": "latitude",
+                    "type": "string"
+                },
+                {
+                    "name": "longitude",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "adviews",
+            "base": "",
+            "fields": [
+                {
+                    "name": "key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "adId",
+                    "type": "uint64"
+                },
+                {
+                    "name": "adName",
+                    "type": "string"
+                },
+                {
+                    "name": "account",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "getad",
+            "base": "",
+            "fields": [
+                {
+                    "name": "category",
+                    "type": "uint64"
+                },
+                {
+                    "name": "latitude",
+                    "type": "string"
+                },
+                {
+                    "name": "longitude",
+                    "type": "string"
+                },
+                {
+                    "name": "minPrice",
+                    "type": "int32"
+                },
+                {
+                    "name": "maxPrice",
+                    "type": "int32"
+                }
+            ]
+        },
+        {
+            "name": "version",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "viewad",
+            "base": "",
+            "fields": [
+                {
+                    "name": "pollName",
+                    "type": "string"
+                },
+                {
+                    "name": "accountName",
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "addad",
+            "type": "addad",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "adreset",
+            "type": "adreset",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "adstatus",
+            "type": "adstatus",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "getad",
+            "type": "getad",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "version",
+            "type": "version",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "viewad",
+            "type": "viewad",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "advert",
+            "type": "advert",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "adviews",
+            "type": "adviews",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "abi_extensions": []
+}
