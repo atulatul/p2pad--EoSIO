@@ -21,3 +21,5 @@ use commands mentioned on the aforemnetioned link to deploy the contract on the 
 
 To test code:  
 1: TBD
+
+Copywrite : All Rights for this code and idea is reserved with the author and whitout any prior permission or any prior date evidence [GIT/or other valid platform] of similar idea by other person organization any alteration or utilization of the code/idea is not permitted.
