@@ -14,7 +14,7 @@ void p2pad::version() {
 
 void p2pad::addad(eosio::name s,std::string adName, std::string adURL,uint64_t type,uint32_t totalTok,uint32_t tokenPerUser,uint8_t status,std::string lat, std::string longi) {
     require_auth(s);
-
+//TO-DO for testing left without permission check need to add permission like p2pad @require
     //symbol_type symbol(S(4,SYS));
     //accounts fromAcc(N(eosio.token),N(s));
    // const auto& myAcc = fromAcc.get(symbol.name());
@@ -63,7 +63,7 @@ void p2pad::adstatus(std::string adName) {
 
 void p2pad::adreset(std::string adName) {
     eosio::print("Reset ad status ", adName); 
-
+//TO-DO for testing left without permission check need to add permission like p2pad @require
     std::vector<uint64_t> keysForModify;
     // find all poll items
     for(auto& item : _ads) {
