@@ -18,11 +18,16 @@ public:
 
     // [[eosio::action]] will tell eosio-cpp that the function is to be exposed as an action for user of the smart contract.
     [[eosio::action]] void version();
+    //addad method would be called by the end product developer to add the advertisemnet in the system right now it does not care about latitude, logitude and other filter aspect
     [[eosio::action]] void addad(eosio::name s,std::string adName, std::string adURL,uint64_t type,uint32_t totalTok,uint32_t tokenPerUser,uint8_t status,std::string lat,std::string longi);
     // TO-DO [[eosio::action]] void rmadvertisement(eosio::name s, std::string adName);
+    //When called the status would be modified to the next level i.e. it would be changed. TO-DO add the check for owner of the add calling the same for adName
     [[eosio::action]] void adstatus(std::string adName);
+    //reset the ad status may not be rquired right now but in case added
     [[eosio::action]] void adreset(std::string pollName);
+    //end user will call with their account id where the token would get credited.
     [[eosio::action]] void viewad(std::string pollName, std::string accountName);
+    //getad would be called by the dApp to present ad to the end user latitude,longitude and related items may not be required right now...
     [[eosio::action]] void getad(uint64_t category,std::string latitude, std::string longitude,int minPrice,int maxPrice);
     //this method can be modified to include more information/s.
 
@@ -59,7 +64,7 @@ public:
     };
     typedef eosio::multi_index<"adviews"_n, adviews, eosio::indexed_by<"adid"_n, eosio::const_mem_fun<adviews, uint64_t, &adviews::by_adId>>> views;
 
-    //struct account {
+    // TO-DO struct account {
    //     asset    balance;
     //    uint64_t primary_key()const { return balance.symbol.name(); }
   //   };
