@@ -1,6 +1,6 @@
 # Decentralized P2P Ad Framework
 
-This project will create a DApp by using P2P Ad Framework contract based on EOSIO.
+This project will create a DApp by using P2P Ad Framework contract based on EOSIO(C++).
 
 This is initial version of the contract and it will have a full ux interface added to it in the next update using which the end user and  product or service proivder can directly place their ad on the blockchain and get connected with end user as their partner.
 ## Getting Started
