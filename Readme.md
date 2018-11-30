@@ -31,7 +31,8 @@ executed transaction: 01a037922edbe3452fcf8b3f34ef93ab361c0495db5fdec81e9ff90864
 #         eosio <= eosio::setabi                {"account":"p2pad1","abi":"0e656f73696f3a3a6162692f312e30000805616464616400090173046e616d650661644e6...
 warning: transaction executed locally, but may not be confirmed by the network yet         ]   
 5: Call methods as follows to test:  
-   for method addad:   
+   **for method addad:***
+   ...
    
      atul2@atul2-VirtualBox:~/contracts/p2pad$ cleos push action p2pad1 addad '["p2pad1","myAd1","http://youtube.com/dsddf",0,1000,10,1,"11.23","12.22"]' -p p2pad1@active  
 executed transaction: 2b16e6441559801954999c6880b3733a3052c12ed956ee219b2c6cb41a0f6ddb  160 bytes  2577 us  
@@ -39,7 +40,8 @@ executed transaction: 2b16e6441559801954999c6880b3733a3052c12ed956ee219b2c6cb41a
 >> Add new advertisement myAd1  
 warning: transaction executed locally, but may not be confirmed by the network yet         ]   
 
-to call adstatus  
+**to call adstatus:**
+...
 
 atul2@atul2-VirtualBox:~/contracts/p2pad$ cleos push action p2pad1 adstatus '["myAd1"]' -p p2pad1@active  
 executed transaction: 59543fa348edadb20cf15ca5c4b8d3db96ca46edfd7a7e8a5b9490b44be0859c  104 bytes  2741 us
@@ -47,9 +49,7 @@ executed transaction: 59543fa348edadb20cf15ca5c4b8d3db96ca46edfd7a7e8a5b9490b44b
 >> Change ad status myAd1modify _ads status1  
 warning: transaction executed locally, but may not be confirmed by the network yet         ]   
 
-to call getad [based on adcategory here it would 0 as we created ad with category 0 in addad method call]  
-
-to call getad:  
+**to call getad [based on adcategory here it would 0 as we created ad with category 0 in addad method call]  **
 
 atul2@atul2-VirtualBox:~/contracts/p2pad$ cleos push action p2pad1 getad '[0,"11.12","12.12",10,100]' -p p2pad1@active  
 executed transaction: 498483e4eb7554bef721db81f81d4654c90ebdd08176854cf10b3841a5b27cac  120 bytes  2424 us  
