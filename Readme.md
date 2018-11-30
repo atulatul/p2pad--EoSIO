@@ -49,7 +49,8 @@ executed transaction: 59543fa348edadb20cf15ca5c4b8d3db96ca46edfd7a7e8a5b9490b44b
 >> Change ad status myAd1modify _ads status1  
 warning: transaction executed locally, but may not be confirmed by the network yet         ]   
 
-**to call getad [based on adcategory here it would 0 as we created ad with category 0 in addad method call]  **
+**to call getad [based on adcategory here it would 0 as we created ad with category 0 in addad method call]**
+...
 
 atul2@atul2-VirtualBox:~/contracts/p2pad$ cleos push action p2pad1 getad '[0,"11.12","12.12",10,100]' -p p2pad1@active  
 executed transaction: 498483e4eb7554bef721db81f81d4654c90ebdd08176854cf10b3841a5b27cac  120 bytes  2424 us  
